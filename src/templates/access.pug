@@ -1,0 +1,102 @@
+extends _layout.pug
+
+block locals
+  - var title = 'tatsu LP';
+
+block content
+  body.tatsulp
+    .container-fluid
+      .row
+        .col-12.col-sm-12.top-wrapper
+          h1 自分を知ることで、相手を好きになる心理学とは？
+
+    .container
+      .row.justify-content-center
+        .col-12.col-sm-12.main1-wrapper
+          .q1
+            h2 こんなことありませんか？
+            .comment__text
+              p 共働きなのに夫が家事を手伝ってくれない。
+
+            .comment__text
+              p 子供の可能性を伸ばせている感じがしない。
+
+            .comment__text
+              p 相手を思っての発言が逆に苛立ててしまう。
+
+
+          h2 自分と相手を理解するタイプセッション
+          p 何故か分かり合えないその原因は実は自分の当たり前を相手に押し付けているからかもしれません。
+          h4 タイプセッションでは
+          .point
+            <span class="box-title">Step 1</span>
+              p 自分の当たり前が相手の当たり前でないことを知る<br>
+          .point
+            <span class="box-title">Step 2</span>
+              p 自分の当たり前がどのタイプに分類されるのかを知る<br>
+          .point
+            <span class="box-title">Step 3</span>
+              p 他にどのような当たり前があるのかを知る
+          p この三段階の学びで日常のコミュニケーションをお互いにとって心地よいものへと導きます。
+          .point-img
+            img(src="../images/IMG_0261.jpg")
+
+          h2 タイプを学ぶ姿勢
+          p この「タイプ」というものを学ぶうえで重要なのは、まず<span class="span">自分ととことん向き合う</span>時間を作ることです。<br>
+            | なぜなら、自身のタイプは他人に決められるものではないからです。自分のタイプを知ることで、自分自身の強みや課題を認識できるようになると、日常で上手くコントロールできるようになります。そして他者との違いはそもそもタイプの違いからだと理解できれば、<span class="span">いままでストレスに感じていた他者の言動をも肯定的にとらえる</span>ことができるのです。
+
+          h2 受講者の声
+          .space-comment
+          .put-icon
+            .icon1
+              img(src="../images/iconmonstr-generation-8-64.png")
+            .comment__text2
+              p 全然違うと思っていた娘の性格が、実は自分とよく似たタイプだという事が分かって、子育てがとてもラクになりました。
+          .space-comment
+          .put-icon
+            .icon1
+              img(src="../images/iconmonstr-generation-10-64.png")
+            .comment__text2
+              p 旦那さんや子供たちの考え方を深く知ることができ、そして尊敬できるようになりました。
+          .space-comment
+          .put-icon
+            .icon1
+              img(src="../images/iconmonstr-generation-12-64.png")
+            .comment__text2
+              p 夫のタイプを知ることで、今まで無視していた彼の優しさに気づくことができるようになりました。
+
+          .pro-wrapper
+            h2 講師の紹介
+
+          .intro-pro
+            img(src="../images/harumi2.jpg")
+            h5 権藤 晴美 Harumi Gondo
+            p ・日系アメリカ人で日本人の夫を持ち、2011年から日本に住んでいます。
+            p ・ハーバード大学院卒業後、大学や製薬メーカーなどでインストラクターを経験。
+            p ・6500時間以上の研修実績、自己理解を深め、成長方法を探る、セミナーを行ってきました。
+            p 現在は、近隣もしくは都内の母子を対象としたレベル別、タイプ別セミナーを日本語と英語で毎週行っています。クライアントの自己理解を深め、人生に生かせる成長方法を探る事が性格判断の目的です。
+          img.imgefe(src="../images/o2a760a483ed40463e516aeaca30f0266_16624014_190506_0003.jpg")
+          img.imgefe2(src="../images/IMG_0262.jpg")
+          h2 無料２時間タイプセッション
+          p この4月から新しくオンラインセミナーをはじめました。
+          p 初回の2時間のセミナーで自己理解を深めてもらいます。
+          img(src="../images/S__15392774.jpg")
+          p そして今回<span class="span">このページからの申し込み限定で7/5(日)のセッションに無料招待</span>致します！
+          p 是非自分自身の無意識の世界に気づいて驚いてください。
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>

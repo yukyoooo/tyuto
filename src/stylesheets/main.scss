@@ -1,0 +1,359 @@
+@import './footer.scss';
+@import './menu.scss';
+
+$main-color:#23AC0E;
+
+*{
+    //font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    font-family:Noto Sans,Noto Sans CJK JP,sans-serif;
+}
+
+html,body, div, p, img, h1, h2, h3, h4, h5{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0 10px;
+    padding:0;
+    font-size: 17px;
+    line-height:1.58 ;
+    color: #1a1a1a;
+    h2, h3{
+        font-size: 22px;
+        font-weight: bold;
+        padding:30px 0 10px 5px;
+        border-bottom: 5px solid $main-color;
+    }
+    h3{
+        border:none;
+    }
+    img{
+        width: 100%;
+        margin:20px 0;
+    }
+    .span{
+        border-bottom:3px solid #EAA8BF;
+        font-weight:bold;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+.top-wrapper{
+    background-image: url(../images/four-leaf-clover-3336774_1280.jpg);
+    background-size: cover;
+    height: 250px;
+    text-align: center;
+    padding:0;
+    h1{
+        margin:100px 0 0 0;
+        font-size:24px;
+        color:white;
+        padding: 20px 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+}
+
+.main1-wrapper{
+    .comment__text{
+        position: relative;
+        padding: 0.5em 0.7em;
+        margin-bottom:1em;
+        background: rgba($main-color, 0.1);
+        font-weight: bold;
+        p{
+            font-size: 15px;
+            margin:0;
+        }
+    }
+    .comment__text:after{
+        position: absolute;
+        content: '';
+        right: 100%;
+        top: 12px;
+        border: 15px solid transparent;
+        border-right: 15px solid rgba($main-color, 0.1);
+        width: 0;
+        height: 0;
+    }
+    .point {
+        position: relative;
+        margin: 2em 0;
+        padding: 0.5em 1em;
+        border: solid 3px $main-color;
+        border-radius: 8px;
+        p{
+            line-height: 1.7;;
+            margin:0;
+
+        }
+    }
+    .point .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -13px;
+        left: 10px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 19px;
+        background: #FFF;
+        color: $main-color;
+        font-weight: bold;
+    }
+
+    .talk{
+        position: relative;
+        padding:0.25em 1em;
+        font-size: 14px;
+        margin-bottom:10px;
+        p{
+            margin:10px 0;
+        }
+        img{
+            margin:0 0 20px 0;
+        }
+        .conversation-wrapper{
+            display: flex;
+            margin-bottom: 5px;
+            .conversation-img{
+                width:8%;
+                margin-right:10px;
+                img{
+                    margin-bottom:5px;
+                }
+            }
+            .conversation{
+                width: 80%;
+                P{
+                    margin:0;
+                }
+            }
+        }
+
+    }
+    .talk:before,.talk:after{
+        content:'';
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        display: inline-block;
+    }
+    .talk:before{
+        border-left: solid 1px #5767bf;
+        border-top: solid 1px #5767bf;
+        top:0;
+        left: 0;
+    }
+    .talk:after{
+        border-right: solid 1px #5767bf;
+        border-bottom: solid 1px #5767bf;
+        bottom:0;
+        right: 0;
+    }
+
+    .think {
+        position: relative;
+        margin: 2em 0 2em 40px;
+        padding: 8px 15px;
+        background: rgba($main-color, 0.1);
+        border-radius: 30px;
+        p{
+            margin:0;
+            font-size: 14px;
+            padding:10px;
+        }
+    }
+    .think:before{font-family: FontAwesome;
+        content: "\f111";
+        position: absolute;
+        font-size: 15px;
+        left: -40px;
+        bottom: 0;
+        color: rgba($main-color, 0.1);
+    }
+    .think:after{
+        font-family: FontAwesome;
+        content: "\f111";
+        position: absolute;
+        font-size: 23px;
+        left: -23px;
+        bottom: 0;
+        color: rgba($main-color, 0.1);
+    }
+    .type4letter{
+        h3{
+            font-size: 16px;
+            padding:40px 0 0px 0;
+        }
+        p{
+            font-size: 12px;
+            color:#767676;
+            line-height: 1.58;
+            padding:0;
+            margin:0;
+        }
+    }
+
+}
+
+.main2-wrapper{
+    .main2__text{
+        font-size: 13px;
+    }
+    .esfp-oomori__text {
+        text-align: right;
+        right:0px;
+        bottom:0;
+        color: #1A1A1A;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .estj__text{
+        @extend.esfp-oomori__text;
+        text-align: left;
+    }
+
+
+
+    .Bko{
+        position: relative;
+        padding: 0.2em 0.7em;
+        margin: 0 0 2em 0;
+        background: rgba($main-color, 0.1);
+        color: darken($main-color, 15%);
+    }
+    .Bko:after {
+        position: absolute;
+        content: '';
+        left: 100%;
+        top: 15px;
+        border: 15px solid transparent;
+        border-left: 15px solid rgba($main-color, 0.1);
+        width: 0;
+        height: 0;
+    }
+    .Ako{
+        position: relative;
+        padding: 0.2em 0.7em;
+        margin-bottom:1em;
+        background: rgba($main-color, 0.1);
+        color: darken($main-color, 15%);
+        font-weight: bold;
+    }
+    .Ako:after{
+        position: absolute;
+        content: '';
+        right: 100%;
+        top: 15px;
+        border: 15px solid transparent;
+        border-right: 15px solid rgba($main-color, 0.1);
+        width: 0;
+        height: 0;
+    }
+    p{
+        margin:6px 0;
+        padding:5px 0;
+        font-size: 14px;
+    }
+
+    .professor {
+        position: relative;
+        padding:0.25em 1em;
+        h2{
+            padding:10px 0;
+            border:none;
+            margin:0;
+        }
+        img{
+            margin:0;
+        }
+        p{
+            font-size: 13px;
+            color:#767676;
+            line-height: 1.58;
+            padding:0;
+        }
+    }
+    .professor:before,.professor:after{
+        content:'';
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        display: inline-block;
+    }
+    .professor:before{
+        border-left: solid 1px #5767bf;
+        border-top: solid 1px #5767bf;
+        top:0;
+        left: 0;
+    }
+    .professor:after{
+        border-right: solid 1px #5767bf;
+        border-bottom: solid 1px #5767bf;
+        bottom:0;
+        right: 0;
+    }
+
+
+    img{
+        margin: 20px 0 0 0;
+    }
+
+    .pic-explain{
+        font-size: 14px;
+        margin:0;
+    }
+
+    .slider-x{
+        margin-top:30px;
+        /* 以下の設定は必須 */
+        scroll-snap-type: x mandatory;
+        width: 105%;
+        overflow-x: scroll;
+        display: flex;
+        -webkit-overflow-scrolling: touch; /* スマホ対応のため必須 */
+        overflow-scrolling: touch; /* スマホ対応のため必須 *
+
+        /* 以下デモ用のデザイン */
+        div{
+            /* 以下の設定は必須 */
+            scroll-snap-align: center;
+            height: 100%;
+            width: 90%;
+            flex: none;
+
+            /* 以下デモ用のデザイン */
+            color: #FFF;
+            font-size: 150%;
+            font-weight: bold;
+            /* 文字の上下左右中央寄せのための記述 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                margin:0;
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+

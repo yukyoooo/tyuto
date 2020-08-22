@@ -100,14 +100,14 @@ module.exports = {
             template: './src/templates/index.pug',
             filname: 'index.html',
         }),
-        new HtmlWebpackPlugin({
-            template: './src/templates/access.pug',
-            filename: 'access.html',
-        }),
-        new HtmlWebpackPlugin({
-            template: './src/templates/members/taro.pug',
-            filename: 'members/taro.html',
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: './src/templates/access.pug',
+        //     filename: 'access.html',
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: './src/templates/members/taro.pug',
+        //     filename: 'members/taro.html',
+        // }),
         new CleanWebpackPlugin(),
     ],
 }

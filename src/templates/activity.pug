@@ -1,0 +1,67 @@
+extends _header.pug
+
+block locals
+  - var title = 'title-top';
+
+block content
+  .container-fluid
+    .row
+      .col-12.col-sm-12.activity-wrapper.overlay1
+        h1 中東平和フォーラムの活動内容
+
+  .container
+    .row.justify-content-center
+      .col-12.col-sm-10.project-wrapper
+        span PROJECT
+        h2 シリア内戦負傷者支援
+        p 当会は、ZIV MEDICAL CENTERがイスラエルの公立病院でありながら敵対国であるシリア人・レバノン人等の紛争被害者1,000人を超える治療の実績があることを知り、この病院に資金援助を始めました。<br>支援活動を通じて、イスラエルとアラブ・パレスチナの平和に寄与していくことを目指します。
+
+    .row
+      .col-12.col-sm-12.project-img-wrapper
+        .project-img1
+          <img src="http://placehold.jp/700x400.png">
+          .project-img2
+            <img src="http://placehold.jp/700x400.png">
+
+    .row.dr-produce
+      .col-12.col-sm-3.dr-img
+        <img src="http://placehold.jp/250x250.png">
+      .col-12.col-sm-9.dr-text
+        p 医療には国境はありません。自国内で治療を受けることができない人々への救命医療は施されるべきと信じます。
+        span Ziv MedicalCenter院長　Dr.Salman Zarka
+    .donation-girl-wrapper
+      h3 寄付について
+      .donation-girl-text
+        p 少女が足につけている固定器具はひとつ3,000ドル(約30万円以上)もします。より高度な、膿を外に取り出せるようなものは6,000~7,000ドル(約60万円〜70万円)もします。支援いただいたお金はこれらの器具の購入に充ててもらっています。
+        p 支援は1口　<span>3,000円から</span>　　目標支援学100万円
+      .contact-button
+        <a href="contact.html" class="btn btn-success">支援する</a>
+
+
+
+    .other-activity-wrapper
+      h2 その他活動
+      .row.other-activity-contents
+        .col-12.col-sm-4.img
+          <img src="http://placehold.jp/300x200.png">
+        .col-12.col-sm-8.text
+          h3 国際支援
+          p 今できることは何かを常に考え、様々なプロジェクトを企画運営しています。中東では未だに対立闘争が起こっており、罪のない子供たちにまで危害を及ぶことがあります。医療分野における人道的支援を実施したり、対立する両国間の子供たちの交流等を推進しています。
+      .row.other-activity-contents
+        .col-12.col-sm-4.img
+          <img src="http://placehold.jp/300x200.png">
+        .col-12.col-sm-8.text
+          h3 平和友好推進事業
+          p 中立で公正な立場を心掛けながら中等の情勢や情報の配信を行っています。また、中東の諸問題の解決の為に有識者や駐日大使との交流を持ったり、各宗教の指導者や民族の代表を一堂に会し対話を図ったり、相互理解と友好を推進しています。
+      .row.other-activity-contents
+        .col-12.col-sm-4.img
+          <img src="http://placehold.jp/300x200.png">
+        .col-12.col-sm-8.text
+          h3 国際交流
+          p 中東諸国の要人を日本に招いたフォーラムの主催や日本から中東諸国に向かうツアーを企画したり、国際交流を推進しています。互いの文化に触れてわかることが多くあります。交流を通じてテレビの向こうの話ではなく、実際に私たちにできることは何かを考える機会を創っています。
+
+
+
+
+
+  include _footer.pug

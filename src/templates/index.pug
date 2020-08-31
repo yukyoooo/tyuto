@@ -1,53 +1,103 @@
-extends _layout.pug
+extends _header.pug
 
 block locals
-  - var title = 'yukyo LP';
+  - var title = 'title-top';
 
 block content
-  body
-    .container-fluid
-      .row
-        .col-12.col-sm-12.top-wrapper
-          h1 自分を知り、新しい世界へaaaaaaaa
 
-    .container
-      .row.justify-content-center
-        .col-12.col-sm-12.main1-wrapper
-          h2 どうしてわかってくれないの
-          p もし、あなたが仕事をしながらも家族のために家事をしたり、子供のために勉強をしたことがあるキャリアウーマンであれば、こんな悩みを感じたことがあるのではないでしょうか。
-          .comment__text
-            p 「家族のために一生懸命家事をしているのに、旦那からは感謝されない・・」
-          .comment__text
-            p 「子供のために色々調べ実践しているのに言うことを聞いてくれない・・」
-          p という方も少なからずいるでしょう。<br>
-            |一方、不自由なく今までこれたものの、
-          .comment__text
-            p 「気づいたら時間だけすぎて、自己成長を感じられない・・・」
-          p という漠然とした不安を抱えている方もいらっしゃるかもしれません。
+  .container-fluid
+    .row
+      .col-12.col-sm-12.top-wrapper
+        h1 中等平和のために<br><span>日本からできること、日本だからできること</span>
+
+  .container
+    .row.justify-content-center
+
+      .col-12.col-sm-12.news-wrapper
+        h2 ニュース
+        <span>News</span>
+        .news-list-wrapper
+          .news-list
+            <a href="page.html"></a>
+            p 2020.04.30
+            h3 ニュース記事題名
+          .news-list
+            <a href="page.html"></a>
+            p 2020.04.30
+            h3 ニュース記事題名
+          .news-list
+            <a href="page.html"></a>
+            p 2020.04.30
+            h3 ニュース記事題名
+
+  .container-fluid
+    .row.justify-content-center
+
+      .col-12.col-sm-12.aboutus-wrapper
+        .col-12.col-sm-7.aboutus-text
+          h2 中立的立場で理解と友好の機会を創出し<br>中東の発展と平和に貢献します
+          ul
+            li 世界の火薬庫と言われる中等地域は、歴史、宗教、民族、文化、政治、経済と、ほぼ全ての分野にわたり様々な事情が複雑に入り交じり、混乱を極めています。
+            li 当事者同士の問題解決は難しく、私達は「遠く離れた日本だからこそ行える平和のための支援」をモットーに、中東地域の諸問題を他人事として考えるのではなく、積極的に相互理解と尊重をしあう機会の創出を目指して活動しています。
+
+
+  .container
+    .row.justify-content-center
+      .col-12.col-sm-12.mission-wrapper
+        h2 Mission Statement
+        ul
+          li 世界人としての共同体貢献
+          li 日常の中でできる隣人愛の実践
+          li 異文化理解と体験による人間性の啓発
+          li 中立による発展的未来への支援
+
+  .container-fluid
+    .import-layout-bg
+
+  .container
+    .row
+      .col-12.col-sm-12.to-contact-wrapper
+        h2 お問合せ
+        <span>Contact</span>
+
+        .row.contact-text-wrapper
+          .col-12.col-sm-6.contact-text
+            <span>特定非営利活動法人</span>
+            h3 中東平和フォーラム
+            dl
+              .list
+                dt 電話番号
+                dd ： 03-3249-2443
+              .list
+                dt FAX
+                dd ： 03-3249-2030
+              .list
+                dt Email
+                dd ： info@mepf.jp
+              .list
+                dt 住所
+                dd ： 〒103-0015 <br>　 東京都中央区日本橋箱崎町２９番１号
+          .col-12.col-sm-5.company-history
+            ul
+              li 平成18年　日本で特定非営利活動法人認証（NPO法人）
+              li 平成19年　ガザ地区団体代表と会談
+              li 平成21年　日本部感体験事業を開始
+              li 平成24年　シリア内戦負傷者支援プロジェクトを開始
+              li 平成25年　人道支援を行うイスラエルの病院を訪問
+              li 平成26年　NPO法人　中等平和フォーラムへ名称変更
+              li 平成28年　中等支援金プロジェクトを学生団体と共催
+              li 平成29年　青年部を発足
+              li 平成29年　中東情勢を理解するための勉強会開催
+              li 平成30年　パレスチナ平和安全保障会議に参加
+              li 平成31年　レバノン難民キャンプ支援プロジェクト企画
+        .contact-button
+          <a href="contact.html" class="btn btn-success">お問い合わせ</a>
 
 
 
+  include _footer.pug
 
 
-
-
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-    .footer
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
     script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")

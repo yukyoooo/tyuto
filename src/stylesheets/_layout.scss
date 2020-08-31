@@ -1,0 +1,70 @@
+.navbar{
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+.import-layout-bg{
+  background-image:url('../images/top.jpeg');
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+  margin-top:150px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
+
+}
+
+// トップページのh1の表示
+.overlay1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 180px;
+  background: rgba(0,0,0, 0.6);
+}
+.topPage{
+  height: 510px;
+  background-image:url('../images/top.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  h1{
+    margin:45vh 0 0 100px;
+    color:white;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999 !important;
+  }
+}
+
+
+// bodyの中の左表示テーマ
+.tag{
+  font-weight: bold;
+  font-size: 20px;
+  color:#393939;
+  margin-top:30px;
+  border-bottom:3px solid $main-color;
+  width:85px;
+  padding-bottom:13px;
+}
+
+//ボタン
+.button{
+  text-align: center;
+  margin-top:50px;
+  a{
+      font-weight: bold;
+      color:white;
+      padding: 15px 100px;
+      margin-bottom: 30px;
+
+  }
+}

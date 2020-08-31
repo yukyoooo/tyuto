@@ -1,0 +1,43 @@
+
+.page-wrapper{
+  @extend .topPage;
+
+}
+
+.page-content{
+  margin-top:100px;
+  .article{
+    background:rgba($main-color, .05);
+    padding: 50px;
+    margin:0 50px;
+    h2{
+      font-weight: bold;
+      font-size: 24px;
+      border-bottom: 3px solid $main-color;
+      padding: 10px 5px;
+      margin-bottom: 50px;
+    }
+
+    .home-button{
+      margin-top:70px;
+      border-top:1px solid #ccc;
+      padding-top:30px;
+    }
+  }
+
+  .side-bar{
+    h2{
+      font-size: 20px;
+      font-weight: bold;
+      margin-top:50px;
+    }
+    ul{
+
+      li{
+        border-bottom:1px solid rgba($main-color, .3);
+        width: 220px;
+        padding: 5px 5px 0 5px;
+      }
+    }
+  }
+}

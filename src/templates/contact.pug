@@ -1,0 +1,85 @@
+
+extends _header.pug
+
+block locals
+  - var title = 'yukyo LP';
+
+block content
+
+  .container-fluid
+    .row
+      .col-12.col-sm-12.contact-wrapper
+        h1 寄付/お問合せ
+        .overlay1
+  .container
+    .row.justify-content-around.how-contact
+      .col-12
+        h2 支援方法
+        p 日常の中からできる隣人愛の実践してみませんか？
+      .col-12.col-sm-5.member-registration
+        h3 会員登録して支援する
+        p 「世界をかえることなんてできるわけがない...」
+        p しかし、日々の小さな思いやりの積み重ねが自分という世界を大きく変えることもあります。<br>それはきっと世界を変える大きな一歩です。
+        .member-registration-order
+          p 1.お問合せフォームを送信します
+          p 2.NewsReportと貯金箱が届きます
+          p 3.貯金箱に思いやりが貯まったら指定口座へ
+          p 4. 感謝状が届きます
+      .col-12.col-sm-5.member-registration
+        h3 会員登録なしで支援する
+        .member-registration-text
+          p 特定非営利活動法人である中東平和フォーラムの活動は皆様の厚い支援によって成り立っております。
+          p 皆様のご支援に心より感謝申し上げます。
+        .payee
+          p 振込先
+          ul
+            li <span>三菱UFJ銀行</span>
+            li 日本橋中央支店(支店番号:333)
+            li 口座番号 4759518
+            li 口座名義 トクヒ）チュウトウヘイワフォーラム
+          ul
+            li <span>ゆうちょ銀行</span>
+            li 記号 10180
+            li 番号 58980491
+            li 口座名義 トクヒ）チュウトウヘイワフォーラム
+
+
+
+
+
+  .container
+    .row.justify-content-center
+      .col-12.col-sm-8.contact-form-wrapper
+        h2 お問合せフォーム
+        <form>
+          <div class="form-group">
+            <label for="exampleInputPassword1">名前</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="山田　太郎">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">電話番号</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="090-0000-0000">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="Select">お問合せ項目</label>
+            <select id="Select" class="form-control">
+              <option>会員登録希望</option>
+              <option>その他お問合せ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="お問合せ内容"></textarea>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+
+  include _footer.pug

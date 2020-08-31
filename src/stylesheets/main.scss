@@ -1,20 +1,207 @@
-@import './footer.scss';
-// @import './menu.scss';
+$main-color:#009250;
+// #C7243A;
 
-$main-color:#23AC0E;
+// @import './imgFadeInOut';
+@import './footer.scss';
+@import './layout.scss';
+@import './activity.scss';
+@import './page.scss';
+@import './contact.scss';
+
+
+
+
+
 
 *{
     //font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-    font-family:Noto Sans,Noto Sans CJK JP,sans-serif;
+    // font-family:Noto Sans,Noto Sans CJK JP,sans-serif;
+    font-family: "NotoSansCJKjp", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+ul{
+    list-style:none;
+    padding:0;
+}
+.container-fluid{
+    padding:0 !important;
 }
 
 html,body, div, p, img, h1, h2, h3, h4, h5{
     box-sizing: border-box;
 }
 
-body{
+
+// トップ
+.top-wrapper{
+    height: 100vh;
+    background-image:url('../images/top.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;   background-size: cover;
+
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        // font-family: "ヒラギノ明朝 Pro W3","ＭＳ 明朝",sans-serif;
+    }
+    span{
+        font-weight: normal;
+        font-size: 1.6rem;
+    }
+}
+
+// 記事一覧
+.news-wrapper{
+    margin-top: 50px;
+
+    h2{
+        @extend .tag;
+    }
+
+    .news-list-wrapper{
+        margin-top:50px;
+
+        .news-list{
+            position:relative;
+            margin-top:15px;
+            padding:10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            background:rgba($main-color, .07);
+            border-radius: 5px;
+
+            a{
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                }
+            }
+
+        }
+        .news-list:hover {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+            transform: translateY(-0.1875em);
+        }
+        .news-list p{
+            margin:0;
+        }
+        .news-list h3{
+            font-size: 20px;
+        }
 
 }
+
+// 私達について
+.aboutus-wrapper{
+    background-image:url('../images/top.jpeg');
+    background-size: cover;
+    height: 90vh;
+    color:white;
+    margin-top:20vh;
+    padding:50px;
+    position: relative;
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 5vw), 0 100%);
+            clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 5vw), 0 100%);
+
+    .aboutus-text{
+        margin-top:17%;
+
+        h2{
+            font-size: 22px;
+            line-height: 40px;
+        }
+        ul{
+            list-style: none;
+            padding:30px 0 0 0;
+            li {
+                padding-top: 10px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+// ミッションステートメント
+.mission-wrapper{
+    margin-top:150px;
+    text-align: center;
+    h2{
+        font-weight: bold;
+        border-bottom: solid 4px $main-color;
+        width:330px;
+        padding:0 0 10px 0;
+        margin:auto;
+    }
+
+    ul{
+        list-style: none;
+        padding:50px 0 0 0;
+        font-size: 20px;
+        li{
+            padding-top:10px;
+        }
+    }
+}
+
+// お問合せ
+.to-contact-wrapper{
+    h2{
+        @extend .tag;
+    }
+
+
+    .contact-text-wrapper{
+        margin:80px 0 0 10px;
+
+        .contact-text{
+            margin-left:5%;
+            text-align:left;
+            span{
+                font-size: 14px;
+            }
+            h3{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            dl{
+                margin-top:40px;
+                .list{
+                    margin-top:10px;
+                    dt{
+                        float:left;
+                    }
+                    dd{
+                        margin:0 0 0 80px;
+                    }
+                }
+            }
+        }
+
+        .company-history{
+            margin:auto;
+            ul{
+                li {
+                text-align: left;
+                margin-top:3px;
+                }
+            }
+        }
+    }
+    .contact-button{
+        @extend .button
+    }
+}
+
 
 
 

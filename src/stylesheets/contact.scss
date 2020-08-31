@@ -1,0 +1,96 @@
+
+
+.contact-wrapper {
+  @extend .topPage;
+  background-image:url('../images/support.jpg');
+
+}
+
+
+.how-contact {
+  text-align: center;
+  margin-top:200px;
+  h2{
+    width: 150px;
+    padding-bottom:10px;
+    border-bottom: 4px solid $main-color;
+    margin:auto;
+    font-weight: bold;
+  }
+  p{
+    margin-top:30px;
+    font-size: 18px;
+  }
+
+  .member-registration{
+    margin-top:100px;
+    background:rgba($main-color, .8);
+    height: 600px;
+    border-radius: 30px;
+    h3{
+      font-weight: bold;
+      padding-top:30px;
+      color:white;
+    }
+    p{
+      color:white;
+    }
+    .member-registration-order{
+      p{
+        text-align: left;
+        background:lighten($main-color, 65%);
+        font-weight: bold;
+        color:rgba(black, 0.7);
+        padding:15px 20px;
+        border-radius:10px;
+        font-size:18px;
+        margin:25px 10px;
+      }
+    }
+
+    .member-registration-text{
+      margin-top:50px;
+      p{
+        color:white;
+        margin-top:10px;
+      }
+    }
+    .payee{
+      text-align: left;
+      margin:50px 20px 20px 20px;
+      padding:20px;
+      border-radius: 10px;
+      background:lighten($main-color, 65%);
+
+      ul{
+
+      }
+      p{
+        font-size: 24px;
+        font-weight: bold;
+        margin:0;
+        color:rgba(black, 0.7);
+      }
+    }
+  }
+}
+
+
+.contact-form-wrapper{
+  margin-top:200px;
+  background:rgba($main-color, .1);
+  padding:50px 40px;
+  border-radius: 20px;
+  h2{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 4px solid $main-color;
+    width: 260px;
+    margin:auto;
+    padding-bottom:10px;
+  }
+  form{
+    margin-top:50px;
+  }
+}
+

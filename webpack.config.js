@@ -100,14 +100,19 @@ module.exports = {
             template: './src/templates/index.pug',
             filname: 'index.html',
         }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/templates/access.pug',
-        //     filename: 'access.html',
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/templates/members/taro.pug',
-        //     filename: 'members/taro.html',
-        // }),
+        new HtmlWebpackPlugin({
+            template: './src/templates/contact.pug',
+            filename: 'contact.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/templates/activity.pug',
+            filename: 'activity.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/templates/page.pug',
+            filename: 'page.html',
+        }),
         new CleanWebpackPlugin(),
     ],
 }
+

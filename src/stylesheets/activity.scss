@@ -26,6 +26,7 @@
   }
   p {
     margin-top:50px;
+    font-size: 23px;
   }
 }
 
@@ -62,11 +63,12 @@
   .dr-text{
     padding-top:100px;
     p{
-      font-size: 18px;
+      font-size: 25px;
       font-weight: bold;
     }
     span{
       float:right;
+      font-size: 20px;
     }
   }
 }
@@ -88,7 +90,7 @@
   .donation-girl-text{
     padding:50px 80px 0 80px;
     p{
-
+      font-size: 23px;
       span{
         font-size: 36px;
         font-weight: bold;
@@ -98,7 +100,7 @@
     }
   }
   .contact-button{
-    @extend .button
+    @extend .button;
   }
 }
 
@@ -115,13 +117,14 @@
     }
     .text{
       h3{
-        margin-top:30px;
+        margin-top:10px;
         font-size: 26px;
         font-weight: bold;
         color: darken($main-color, 5%);
       }
       p{
-        margin-top:30px;
+        margin-top:15px;
+        font-size:22px;
       }
     }
   }

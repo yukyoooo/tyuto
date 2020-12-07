@@ -48,11 +48,8 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
         font-weight: bold;
         width: 100%;
         text-align: center;
+        line-height:65px;
         // font-family: "ヒラギノ明朝 Pro W3","ＭＳ 明朝",sans-serif;
-    }
-    span{
-        font-weight: normal;
-        font-size: 1.6rem;
     }
 }
 
@@ -114,18 +111,20 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
             clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 5vw), 0 100%);
 
     .aboutus-text{
-        margin-top:17%;
+        margin-top:10%;
 
         h2{
-            font-size: 22px;
-            line-height: 40px;
+            font-size: 40px;
+            line-height: 50px;
         }
         ul{
             list-style: none;
-            padding:30px 0 0 0;
+            font-size:25px;
+            line-height: 50px;
+            padding:50px 0 0 0;
             li {
-                padding-top: 10px;
-                line-height: 25px;
+                padding-top: 30px;
+                line-height: 40px;
             }
         }
     }
@@ -146,7 +145,7 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
     ul{
         list-style: none;
         padding:50px 0 0 0;
-        font-size: 20px;
+        font-size: 35px;
         li{
             padding-top:10px;
         }
@@ -164,13 +163,14 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
         margin:80px 0 0 10px;
 
         .contact-text{
-            margin-left:5%;
             text-align:left;
+            font-size: 20px;
+
             span{
-                font-size: 14px;
+                font-size: 20px;
             }
             h3{
-                font-size: 20px;
+                font-size: 30px;
                 font-weight: bold;
             }
             dl{
@@ -189,6 +189,7 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
 
         .company-history{
             margin:auto;
+            font-size: 20px;
             ul{
                 li {
                 text-align: left;
@@ -198,7 +199,7 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
         }
     }
     .contact-button{
-        @extend .button
+        @extend .button;
     }
 }
 

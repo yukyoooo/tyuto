@@ -2,7 +2,7 @@
 
 .contact-wrapper {
   @extend .topPage;
-  background-image:url('../images/support.jpg');
+  background-image:url('../images/contact-2.jpg');
 
 }
 
@@ -16,6 +16,13 @@
     border-bottom: 4px solid $main-color;
     margin:auto;
     font-weight: bold;
+  }
+
+  .how-contact-text{
+    p {
+      margin-top:70px;
+      font-size: 30px;
+    }
   }
   p{
     margin-top:30px;

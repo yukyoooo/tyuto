@@ -49,17 +49,18 @@
 }
 
 
-.import-layout-bg{
-  background-image:url('../images/main-1.jpg');
-  background-size: cover;
-  height: 40vh;
-  position: relative;
-  overflow: hidden;
-  margin-top:150px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
+// .import-layout-bg{
+//   // background-image:url('../images/main-3_2.jpg');
+//   background-color:$main-color;
+//   background-size: cover;
+//   height: 250px;
+//   position: relative;
+//   overflow: hidden;
+//   margin-top:150px;
+//   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
+//   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
 
-}
+// }
 
 // トップページのh1の表示
 .overlay1::after {
@@ -69,7 +70,7 @@
   left: 0;
   display: block;
   width: 100%;
-  height: 180px;
+  height: 170px;
   background: rgba(0,0,0, 0.6);
 }
 .topPage{

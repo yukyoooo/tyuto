@@ -100,10 +100,10 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
 
 // 私達について
 .aboutus-wrapper{
-    background-image:url('../images/main-2.jpg');
+    background-image:url('../images/main-2_2.png');
     background-size: cover;
-    background: linear-gradient(-45deg, rgba(246, 255, 255, .4), rgba(0, 0, 0, .4)),
-  url('../images/main-2.jpg');
+//     background: linear-gradient(-45deg, rgba(246, 255, 255, .4), rgba(0, 0, 0, .4)),
+//   url('../images/main-2_2.png');
     height: 90vh;
     color:white;
     margin-top:20vh;
@@ -114,16 +114,17 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
             clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 5vw), 0 100%);
 
     .aboutus-text{
-        margin-top:10%;
+        margin-top:17%;
+        // margin-left:3%;
         font-weight: bold;
         h2{
-            font-size: 40px;
+            font-size: 25px;
             line-height: 50px;
             font-weight: bold;
         }
         ul{
             list-style: none;
-            font-size:25px;
+            font-size:20px;
             line-height: 50px;
             padding:50px 0 0 0;
             li {
@@ -136,7 +137,8 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
 
 // ミッションステートメント
 .mission-wrapper{
-    margin-top:150px;
+    padding-top:250px;
+    padding-bottom: 200px;
     text-align: center;
     h2{
         font-weight: bold;
@@ -149,7 +151,7 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
     ul{
         list-style: none;
         padding:50px 0 0 0;
-        font-size: 35px;
+        font-size: 25px;
         li{
             padding-top:10px;
         }
@@ -157,7 +159,12 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
 }
 
 // お問合せ
+.contact-bg-color{
+    background-color:rgba($main-color, .07);
+    margin-top:-100px;
+}
 .to-contact-wrapper{
+    margin-top:100px;
     h2{
         @extend .tag;
     }
@@ -205,7 +212,10 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
     .contact-button{
         @extend .button;
     }
+
+
 }
+
 
 
 

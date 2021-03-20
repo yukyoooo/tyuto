@@ -104,7 +104,7 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
     background-size: cover;
 //     background: linear-gradient(-45deg, rgba(246, 255, 255, .4), rgba(0, 0, 0, .4)),
 //   url('../images/main-2_2.png');
-    height: 90vh;
+    height: 850px;
     color:white;
     margin-top:20vh;
     padding:50px;
@@ -218,6 +218,7 @@ html,body, div, p, img, h1, h2, h3, h4, h5{
 
 
 
+@import './responsive.scss';
 
 
 

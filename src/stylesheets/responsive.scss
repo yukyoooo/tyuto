@@ -1,0 +1,285 @@
+// responsive.scss
+/*  タブレット向けレイアウト*/
+@media all and (max-width: 1005px) {
+}
+
+/*  スマホ向けレイアウト*/
+@media (max-width:720px) {
+  //
+  // 共通パーツ
+  //
+
+  // ナビゲーションバー
+  .navbar{
+    .home{
+      img{
+        margin-right: 10px;
+        width:50px;
+      }
+
+      .bar-flexbox{
+        img{
+          width:50%;
+        }
+        span {
+          font-size: 10px;
+          line-height: 5px;
+          padding-top:5px;
+        }
+        p{
+          font-size:15px;
+        }
+      }
+    }
+  }
+
+  // トップのヘッダー部分
+  .overlay1::after {
+    height: 100px;
+  }
+  .topPage{
+    height: 300px;
+    h1{
+      margin: 235px 0 0 15px;
+      font-size: 22px;
+    }
+  }
+
+
+
+
+  //
+  // メインページ
+  //
+  .top-wrapper{
+    height: 450px;
+
+    h1{
+      font-size:27px;
+      line-height: 45px;
+      top:60%;
+    }
+  }
+  // news
+  .news-wrapper{
+    margin-top:30px;
+  }
+
+  // 私達について
+  .aboutus-wrapper{
+    padding:10px;
+    height: 650px;
+
+    .aboutus-text{
+      margin-top:90px;
+      padding-left:25px;
+      h2{
+        margin: 0;
+        font-size: 20px;
+        line-height: 40px;
+
+      }
+      ul{
+        padding:0;
+        font-size:17px;
+        li{
+          line-height: 30px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  // mission statement
+  .mission-wrapper{
+    padding-top:200px;
+    padding-bottom:100px;
+    ul{
+      font-size: 20px;
+    }
+  }
+
+
+  //お問い合わせ
+  .to-contact-wrapper{
+    margin-top:30px;
+    .contact-text-wrapper{
+      margin:50px 0 0 10px;
+      .contact-text{
+        font-size: 15px;
+        padding: 0;
+
+
+        h3 {
+          font-size: 20px;
+        }
+        dl{
+          margin-top:40px;
+          .list{
+              margin-top:0px;
+              dd{
+                  margin:0 0 0 60px;
+              }
+          }
+      }
+      }
+      .company-history{
+        font-size: 12px;
+        padding: 30px 0 0 0;
+
+      }
+
+    }
+  }
+
+  //
+  // 活動内容ページ
+  //
+
+  // プロジェクト
+  .project-wrapper{
+    margin-top:100px;
+    h2{
+      margin-top:50px;
+      font-size: 30px;
+    }
+    p{
+      margin-top:50px;
+      font-size: 18px;
+      padding:10px;
+    }
+  }
+  .project-img-wrapper{
+  height: 500px;
+    .project-img1{
+      position: relative;
+      margin-left:0;
+      margin-top:0px;
+      img{
+        width: 100%;
+      }
+      .project-img2{
+        position: absolute;
+        top:240px;
+        left:0px;
+        width: 100%;
+        img{
+          width: 100%;
+
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
+
+  // ドクター紹介
+  .dr-produce{
+    .dr-img{
+      text-align: center;
+    }
+    .dr-text{
+      padding-top:20px;
+      p{
+        padding:10px;
+        font-size: 17px;
+      }
+      span{
+        font-size: 15px;
+      }
+    }
+  }
+
+  // 寄付について
+  .donation-girl-wrapper{
+    margin-top:80px;
+    h3{
+      font-size: 30px;
+      padding-top:60px;
+    }
+    .donation-girl-text{
+      padding:40px 20px 0 20px;
+      p{
+        font-size: 20px;
+        text-align: left;
+        span{
+          font-size: 34px;
+        }
+      }
+    }
+  }
+
+  // その他活動
+  .other-activity-wrapper{
+    margin-top:80px;
+    .other-activity-contents{
+      margin-top:50px;
+      .text{
+        p{
+          font-size:18px;
+        }
+      }
+    }
+  }
+
+  //
+  // お問い合わせページ
+  //
+
+  //
+  .how-contact {
+    margin-top:100px;
+    .how-contact-text{
+      p {
+        margin-top:50px;
+        font-size: 20px;
+      }
+    }
+    p{
+      text-align: left;
+    }
+    .member-registration{
+      margin-top:50px;
+      height: 750px;
+      .member-registration-text{
+        margin-top:50px;
+        p{
+          text-align: left;
+        }
+      }
+      .payee{
+        text-align: left;
+        margin:60px 10px 10px 10px;
+      }
+    }
+  }
+
+  // お問い合わせフォーム
+  .contact-form-wrapper{
+    margin-top:100px;
+    padding:50px 10px;
+    h2{
+      font-size: 30px;
+    }
+  }
+
+
+
+
+  //
+  // footer
+  //
+  .footer{
+    height: 100px;
+    margin-top:50px;
+  }
+
+
+
+
+
+
+
+}
+
+
+

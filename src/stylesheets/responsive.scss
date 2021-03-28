@@ -11,24 +11,33 @@
 
   // ナビゲーションバー
   .navbar{
-    .home{
-      img{
-        margin-right: 10px;
-        width:50px;
+    .home-btn{
+      .home-btn-img{
+        img{
+          width: 50px;
+        }
       }
 
-      .bar-flexbox{
+      .home-btn-text{
+        width: 200px;
         img{
-          width:50%;
+          top:2px;
+          height: 15px;
         }
-        span {
-          font-size: 10px;
-          line-height: 5px;
-          padding-top:5px;
+        span{
+          top:18px;
+          font-size: 8px;
         }
         p{
-          font-size:15px;
+          top:30px;
+          font-size: 15px;
         }
+      }
+    }
+
+    .navbar-collapse{
+      a{
+        font-size: 20px;
       }
     }
   }
